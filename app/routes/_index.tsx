@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Hero from "~/components/Hero";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,11 +10,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remoooooooooooookjlllkjoix</h1>
-      <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 }
